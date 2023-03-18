@@ -5,7 +5,7 @@
   tasks:
 
   - name: Hello World!
-    #shell: echo "Hi! Tower is working!"
-    path: ~/foo.txt
-    state: touch
-    mode: u=r,g=r,o=r
+  - name: Download foo.conf
+    ansible.builtin.get_url:
+      url: http://example.com/path/file.conf
+      dest: /etc/foo.conf
