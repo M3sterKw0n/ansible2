@@ -1,5 +1,5 @@
 - name: Place file
-  hosts: servers
+  hosts: 10.128.15.215
   become: yes
 
   tasks:
