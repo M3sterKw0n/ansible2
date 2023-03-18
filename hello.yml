@@ -4,7 +4,6 @@
 
   tasks:
 
-  - name: Hello World!
   - name: Download foo.conf
     ansible.builtin.get_url:
       url: http://example.com/path/file.conf
