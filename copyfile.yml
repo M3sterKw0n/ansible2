@@ -4,8 +4,11 @@
 
   tasks:
 
-- name: Touch a file, using symbolic modes to set the permissions (equivalent to 0644)
-    path: /tmp/foo.conf
-    state: touch
-    mode: u=rw,g=r,o=r
+- name: Call Roles
+  hosts: servers
+  roles:
+   #- hostname
+   #- firewalld
+   #- ntp-config
+   - motd
 
